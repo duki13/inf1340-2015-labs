@@ -8,29 +8,21 @@ __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
 
-"""
-    Exercise: Vowel or Consonant
-    Reads a letter of the alphabet from the user. (You can assume that it's
-    lowercase.) If the user enters a, e, i, o or u then your program should
-    display "vowel". If the user enters y then your program should display
-    "sometimes a vowel, sometimes a consonant". Otherwise your program should
-    display a message indicating that the letter is a "consonant".
-"""
-
-letter = raw_input("Input a Letter")
-
-
-if letter == "a":
+def vowels_and_consonants():
+    letter = raw_input("Input a Letter")
+    if letter == "a":
         print ("vowel")
-elif letter == "e":
+    elif letter == "e":
         print ("vowel")
-elif letter == "i":
+    elif letter == "i":
         print ("vowel")
-elif letter == "o":
+    elif letter == "o":
         print ("vowel")
-elif letter == "u":
+    elif letter == "u":
         print ("vowel")
-elif letter == "y":
-        print ("sometimes a vowel")
-else:
+    elif letter == "y":
+        print ("sometimes a vowel, sometimes a consonant")
+    else:
         print ("consonant")
+
+vowels_and_consonants()
